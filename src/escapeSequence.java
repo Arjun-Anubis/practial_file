@@ -20,6 +20,7 @@ class escapeSequence
 
 	public static void main (String [] args)
 	{
+		System.out.println( "8 bit: " );
 		System.out.printf( "%s White %s Red %s Green %s Brown %s Blue %s Magenta %s Cyan %s Black %s\n", White, Red, Green, Brown, Blue, Magenta, Cyan, Black,  Clear );
 		System.out.printf( "%s%s White %s Red %s Green %s Brown %s Blue %s Magenta %s Cyan %s Black %s\n", UnderLine, White, Red, Green, Brown, Blue, Magenta, Cyan, Black,  Clear );
 		System.out.printf( "%s%s White %s Red %s Green %s Brown %s Blue %s Magenta %s Cyan %s Black %s\n", Bold, White, Red, Green, Brown, Blue, Magenta, Cyan, Black,  Clear );

@@ -1,10 +1,14 @@
-SRCS= $(wildcard *.java)
+SRCS= $(wildcard src/*.java)
+BUILDDIR= build/
 CLASSES = $(SRCS:.java=.class)
+JOPTIONS= -d build
 JC= javac
 
 all: $(CLASSES)
 	@echo Finished making all
-$(CLASSES): $(SRCS)
-	$(JC) $(SRCS)
+
+%.class: %.java
+	$(JC) $< $(JOPTIONS)
+
 clean:
-	$(RM) $(CLASSES)
+	$(RM) $(BUILDDIR)*.class
